@@ -16,6 +16,11 @@ int main()
     double d=1.223;
     cout<<d<<endl;
     cout<< sizeof(a) <<endl;
+    cout<< sizeof(b) <<endl;
+    cout<< sizeof(bl) <<endl;
+    cout<< sizeof(fl) <<endl;
+    cout<< sizeof(d) <<endl;
+    
 
     return 0;
 }
