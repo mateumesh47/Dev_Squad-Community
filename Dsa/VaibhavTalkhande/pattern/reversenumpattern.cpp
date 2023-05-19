@@ -188,7 +188,7 @@ int main(){
     //     cout << endl;
     // }
     //number inverted traingle each same in each  no. row
-    for()
+    
     
 
 }
