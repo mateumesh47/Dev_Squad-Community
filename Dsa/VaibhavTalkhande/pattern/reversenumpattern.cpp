@@ -137,8 +137,58 @@ int main(){
     //     }
     //     cout<<endl;
     // }
-    
+    //star pattern 13
+    //     *
+    //    **
+    //   ***
+    //  ****
+    // for(int i=1;i<=n;i++){
+    //     for(int j=1;j<=n;j++){
+    //         if(j<=n-i){
+    //             cout << " ";
+    //         }
+    //         else{
+    //             cout << "*";
+    //         }
+    //     }
+    //     cout << endl;
+    // }
+    //star pattern 14
+    // ****
+    // ***
+    // **
+    // *
+    // for(int i=1;i<=n;i++){
+    //     for(int j=1;j<=n;j++){
+  
 
+    //       if(j<=n-i+1){
+    //             cout << "*";
+    //         }
+    //         else{
+    //             cout << " ";
+    //         }
+    //     }
+    //     cout << endl;
+    // }
+    //star pattern 15
+    // ****
+    //  ***
+    //   **
+    //    *
+    // for(int i=1;i<=n;i++){
+    //     for(int j=1;j<=n;j++){
+    //         if(j<=i-1){
+    //             cout << " ";
+    //         }
+    //         else{
+    //             cout << "*";
+    //         }
+    //     }
+    //     cout << endl;
+    // }
+    //number inverted traingle each same in each  no. row
+    
     
 
 }
