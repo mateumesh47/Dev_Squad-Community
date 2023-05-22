@@ -6,16 +6,20 @@ void sort01(vector<int>& v)
 {
     int n=v.size();
     int noo=0;
+    int no2=0;
     int noz=0;
     for(int i=0;i<n;i++)
     {
         if(v[i]==0) noz++;
-        else noo++;
+        else if(v[i]==1) noo++;
+        else no2++;
+     
     }
     for(int i=0;i<n;i++)
     {
         if(i<noz) v[i]=0;
-        else v[i]=1;
+        else if(i<(noo+noz)) v[i]=1;
+        else v[i]=2;
     }
 }
 int main()
@@ -25,7 +29,7 @@ int main()
     cout<<"Enter size of vector : ";
     cin>>n;
 
-    cout<<"Enter element in vector only enter 0,1 : ";
+    cout<<"Enter element in vector only enter 0,1,2 : ";
     for(int i=0;i<n;i++)
     {
         int x;
@@ -33,7 +37,7 @@ int main()
         v.push_back(x);
     }
 
-    //sort(v.begin(),v.end());
+    
     sort01(v);
     for(int i=0;i<n;i++)
     {

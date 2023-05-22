@@ -2,20 +2,21 @@
 #include<vector>
 #include<algorithm>
 using namespace std;
-void sort01(vector<int>& v)
+void sum(vector<int>& v)
 {
     int n=v.size();
-    int noo=0;
-    int noz=0;
+    int target;
+    cout<<"enter target";
+    cin>>target;
     for(int i=0;i<n;i++)
     {
-        if(v[i]==0) noz++;
-        else noo++;
-    }
-    for(int i=0;i<n;i++)
-    {
-        if(i<noz) v[i]=0;
-        else v[i]=1;
+        for(int j=1;j<n;j++)
+       {
+          if(v[i]+v[j]==target)
+          {
+            cout<<"["<<i<<" "<<j<<"]";
+          }
+       }
     }
 }
 int main()
@@ -24,8 +25,9 @@ int main()
     int n;
     cout<<"Enter size of vector : ";
     cin>>n;
+  
 
-    cout<<"Enter element in vector only enter 0,1 : ";
+    cout<<"Enter element in vector : ";
     for(int i=0;i<n;i++)
     {
         int x;
@@ -34,9 +36,5 @@ int main()
     }
 
     //sort(v.begin(),v.end());
-    sort01(v);
-    for(int i=0;i<n;i++)
-    {
-        cout<<v[i]<<" ";
-    }
+    sum(v);
 }

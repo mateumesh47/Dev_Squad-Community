@@ -1,0 +1,9 @@
+body {
+    font-family: sans-serif;
+    color: aqua;
+    background-color: black;
+  }
+  input[type="checkbox"]:checked + label.strike {
+    color: aliceblue;
+    text-decoration: line-through;
+  }
