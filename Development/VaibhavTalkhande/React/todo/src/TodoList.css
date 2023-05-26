@@ -1,7 +1,6 @@
 /* TodoList.css */
 .todo-list {
     background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
@@ -10,14 +9,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100vh;
   }
   
 .todo-list ol {
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     list-style-type: none;
     padding: 0;
   }
   
   .todo-list li {
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -33,6 +38,7 @@
   
   .todo-list .completed {
     text-decoration: line-through;
+
   }
   
     .todo-list button {
