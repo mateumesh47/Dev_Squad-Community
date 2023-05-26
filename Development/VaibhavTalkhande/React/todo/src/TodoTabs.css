@@ -1,0 +1,20 @@
+/* TodoTabs.css */
+.todo-tabs {
+    display:block;
+    align-items: center;
+    margin-top: 16px;
+  }
+  
+  .todo-tabs span {
+    margin-right: 8px;
+  }
+  
+  .todo-tabs .btn {
+    margin-right: 8px;
+  }
+  
+  .todo-tabs .btn.active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
