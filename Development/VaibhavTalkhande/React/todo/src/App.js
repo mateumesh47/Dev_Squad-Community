@@ -66,16 +66,13 @@ export default function App() {
           <input type="text" value={inputTodo} onChange={(event) => setInputTodo(event.target.value)} />
           <button type="submit" onClick={addTodo}>Add Todo</button>
         </form>
-          <div className="todo-tabs">
-            <TodoTabs filter={filter} setFilter={setFilter} todos={todos} />
-            <button onClick={clearCompletedTask}>Clear All</button>
-          </div>
-          <div className="todo-list">
-              <TodoList todos={filterTodos()} deleteTask={deleteTask} completedTask={completedTask} />
-          </div>
-
-
-
+        <div className="todo-tabs">
+          <TodoTabs filter={filter} setFilter={setFilter} todos={todos} />
+          <button onClick={clearCompletedTask}>Clear All</button>
+        </div>
+        <div className="todo-list">
+          <TodoList todos={filterTodos()} deleteTask={deleteTask} completedTask={completedTask} />
+        </div>
       </header>
     </div>
   );

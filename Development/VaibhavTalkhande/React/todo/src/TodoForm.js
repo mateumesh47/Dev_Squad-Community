@@ -6,7 +6,7 @@ const TodoForm = ({ addTodo }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (inputTodo.trim() !== '') {
+    if (inputTodo.trim() !== null && inputTodo.trim() !== '') {
       addTodo(inputTodo);
       setInputTodo('');
     }
@@ -14,10 +14,10 @@ const TodoForm = ({ addTodo }) => {
 
   return (
     <div className="todo-form">
-        <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <input type="text" value={inputTodo} onChange={(event) => setInputTodo(event.target.value)} />
-        <button type="submit">Add Todo</button>
-        </form>
+        <button className="button-52" type="submit">Add Todo</button>
+      </form>
     </div>
   );
 };
