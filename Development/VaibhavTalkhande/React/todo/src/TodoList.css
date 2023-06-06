@@ -1,0 +1,50 @@
+
+  
+.todo-list ol {
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .todo-list li {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    width: 100%;
+    padding: 8px;
+  }
+  
+  .todo-list input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  .todo-list .completed {
+    text-decoration: line-through;
+
+  }
+  
+    .todo-list button {
+        margin-left: 8px;
+        padding: 4px 10px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 0.5rem;
+    }
+
+
+.todo-item {
+  /* Add styles for each todo item */
+  /* For example: */
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
